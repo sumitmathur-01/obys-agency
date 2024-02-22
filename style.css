@@ -1,3 +1,23 @@
+@font-face {
+  font-family: plain-light;
+  src: url(./font/plain-light-webfont.ttf);
+}
+
+@font-face {
+  font-family: plain-regular;
+  src: url(./font/plain-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: silkserif-lightitalic;
+  src: url(./font/silkserif-lightitalic-webfont.ttf);
+}
+
+@font-face {
+  font-family: silkserif-regularitalic;
+  src: url(./font/silkserif-regularitalic-webfont.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +33,16 @@ body {
   width: 100%;
 }
 
+#cursor {
+  height: 2vw;
+  width: 2vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -20,12 +50,13 @@ body {
   background-color: #0b0b0b;
   position: fixed;
   z-index: 999;
+  /* display: none; */
 }
 
 .line {
   height: fit-content;
   overflow: hidden;
-  line-height: 1.2;
+  line-height: 1.1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -34,7 +65,7 @@ body {
 
 #loader-count {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 1.3vw;
 }
@@ -52,8 +83,9 @@ body {
 }
 
 .line h1 {
-  font-size: 6.5vw;
+  font-size: 7vw;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .line #line-h2 {
@@ -80,6 +112,8 @@ body {
   }
 }
 
+/* Loader___________________________________________ */
+
 #main {
   position: relative;
   width: 100%;
@@ -89,4 +123,65 @@ body {
 #page1 {
   height: 100vh;
   background-color: #151515;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3vw 5vw;
+}
+
+#nav #nav-item {
+  display: flex;
+  align-items: center;
+  gap: 2.5vw;
+}
+
+#nav-item h4 {
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+/* Navbar___________________________________________ */
+
+#hero {
+  margin-top: 16vh;
+  width: 72%;
+  margin-left: 28%;
+  position: relative;
+  z-index: 999;
+}
+
+.hero-line {
+  height: fit-content;
+  overflow: hidden;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-line h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.hero-line h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  border-bottom: 10px solid #fff;
+}
+
+.hero-line h2:hover {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  font-weight: 500;
+  border-bottom: 10px solid #ffffff00;
+}
+
+.hero-line span {
+  font-size: 7vw;
 }
