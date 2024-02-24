@@ -47,10 +47,18 @@ function loaderAnimation() {
 
 loaderAnimation();
 
-document.addEventListener("mousemove", (dets) => {
+const cursor = document.querySelector("#cursor");
+
+window.addEventListener("mousemove", (dets) => {
+  const posX = dets.clientX;
+  const posY = dets.clientY;
+
+  cursor.style.left = `${posX}px`;
+  cursor.style.top = `${posY}px`;
+
   gsap.to("#cursor", {
-    top: dets.y,
-    left: dets.x,
+    top: `${posY}px`,
+    left: `${posX}px`,
   });
 });
 

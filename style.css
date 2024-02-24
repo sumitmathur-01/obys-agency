@@ -31,6 +31,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  cursor: none;
 }
 
 #cursor {
@@ -38,9 +39,10 @@ body {
   width: 2vw;
   border: 1px solid #fff;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   transform: translate(-50%, -50%);
   z-index: 99;
+  pointer-events: none;
 }
 
 #loader {
@@ -184,4 +186,134 @@ body {
 
 .hero-line span {
   font-size: 7vw;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#page2 #video-container {
+  background-color: red;
+  height: 65vh;
+  width: 70vw;
+  position: absolute;
+  right: 0%;
+  background-image: url("./image/Showreel-2022-preview-1.jpg");
+}
+
+#video-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+#video-container video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#video-cursor {
+  position: absolute;
+  top: -15%;
+  right: 15%;
+  z-index: 9;
+  height: 9vw;
+  width: 9vw;
+  border-radius: 50%;
+  background-color: #ffa63d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-cursor i {
+  font-size: 2vw;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #484848;
+}
+
+#page4 {
+  min-height: 100vh;
+  /* width: 70%; */
+  position: relative;
+  overflow: hidden;
+}
+
+#page4-container {
+  width: 90vw;
+  margin-left: 22vw;
+  padding: 4vw;
+}
+
+#page4-container h1 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+}
+
+#page4-container .anim-line {
+  width: 80%;
+  height: 2px;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+
+#page4-container > p {
+  width: 33vw;
+  font-size: 2.1vw;
+}
+
+#page4-container #page4-flex {
+  margin-top: 3vw;
+  display: flex;
+}
+
+#page4-container #page4-flex img {
+  width: 31vw;
+  margin-right: 2vw;
+}
+
+#page4-content p {
+  font-size: 1vw;
+  width: 18vw;
+  margin-bottom: 2vw;
+  line-height: 1.5;
+}
+
+#page4-container #blue-box {
+  width: 32vw;
+  padding: 2vw 2.2vw;
+  background-color: #3f7df4;
+  position: relative;
+  margin-top: -13vw;
+  margin-left: 20vw;
+}
+
+#blue-box .blue-elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3vw;
+  margin: 2vw;
+}
+
+#blue-box .blue-elem h4 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+#blue-box .blue-elem p {
+  font-size: 1vw;
 }
