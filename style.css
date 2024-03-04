@@ -1,20 +1,20 @@
 @font-face {
-  font-family: plain-light;
+  font-family: "plain-light";
   src: url(./font/plain-light-webfont.ttf);
 }
 
 @font-face {
-  font-family: plain-regular;
+  font-family: "plain-regular";
   src: url(./font/plain-regular-webfont.ttf);
 }
 
 @font-face {
-  font-family: silkserif-lightitalic;
+  font-family: "silkserif-lightitalic";
   src: url(./font/silkserif-lightitalic-webfont.ttf);
 }
 
 @font-face {
-  font-family: silkserif-regularitalic;
+  font-family: "silkserif-regularitalic";
   src: url(./font/silkserif-regularitalic-webfont.ttf);
 }
 
@@ -22,17 +22,17 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
 
-  font-family: "Plain Light";
+  font-family: "plain-light";
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  /* cursor: none; */
+  cursor: none;
 }
 
 #cursor {
@@ -42,8 +42,8 @@ body {
   border-radius: 50%;
   position: fixed;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 9;
   pointer-events: none;
 }
@@ -68,11 +68,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   gap: 3vw;
 }
 
@@ -82,8 +82,8 @@ body {
   display: flex;
   /* align-items: center; */
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 1.3vw;
 }
 
@@ -107,22 +107,22 @@ body {
 .line #line-h2 {
   font-size: 6.5vw;
   text-transform: uppercase;
-  font-family: "Plain Light";
+  font-family: "plain-light";
 
   -webkit-animation-name: fontChange;
 
-          animation-name: fontChange;
+  animation-name: fontChange;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 @-webkit-keyframes fontChange {
   0% {
-    font-family: "Plain Light";
+    font-family: "plain-light";
     opacity: 0;
   }
 
@@ -137,7 +137,7 @@ body {
 
 @keyframes fontChange {
   0% {
-    font-family: "Plain Light";
+    font-family: "plain-light";
     opacity: 0;
   }
 
@@ -168,11 +168,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
   padding: 3vw 5vw;
 }
@@ -182,8 +182,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 2.5vw;
 }
 
@@ -212,11 +212,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .hero-line h1 {
@@ -260,8 +260,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #page2 #video-container {
@@ -279,7 +279,7 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   top: 0;
 }
@@ -288,7 +288,7 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   opacity: 0;
 }
 
@@ -305,11 +305,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #video-cursor i {
@@ -358,19 +358,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #image-container .image-items {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin: 6vw 0;
   position: relative;
   width: 24vw;
@@ -393,11 +393,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .image-circle svg {
@@ -416,11 +416,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   opacity: 0;
   scale: 0;
 
@@ -453,15 +453,15 @@ body {
   margin-top: 15vw;
   width: 30%;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 .image-circle:nth-child(2n) svg {
   width: 30%;
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .image-items h3 {
@@ -474,8 +474,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 1.2vw 0;
 }
 
@@ -496,10 +496,10 @@ body {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
 }
 
 /* ................................_________________________ */
@@ -578,11 +578,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 1px solid #fff;
   padding-bottom: 3vw;
   margin: 2vw;
@@ -624,17 +624,17 @@ body {
 
   -webkit-animation-name: scrollAnim;
 
-          animation-name: scrollAnim;
+  animation-name: scrollAnim;
   -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .elem span {
-  font-family: silkserif-regularitalic;
+  font-family: "silkserif-regularitalic";
   -webkit-text-stroke: 1px #fff;
   color: transparent;
   font-weight: 100;
@@ -643,24 +643,24 @@ body {
 @-webkit-keyframes scrollAnim {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
     -webkit-transform: translateX(calc(-100% - 18px));
-            transform: translateX(calc(-100% - 18px));
+    transform: translateX(calc(-100% - 18px));
   }
 }
 
 @keyframes scrollAnim {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 
   to {
     -webkit-transform: translateX(calc(-100% - 18px));
-            transform: translateX(calc(-100% - 18px));
+    transform: translateX(calc(-100% - 18px));
   }
 }
 
@@ -670,7 +670,7 @@ body {
 }
 
 .elem2 span {
-  font-family: silkserif-regularitalic;
+  font-family: "silkserif-regularitalic";
   -webkit-text-stroke: 1px #fff;
   color: transparent;
   font-weight: 100;
@@ -685,18 +685,18 @@ body {
   display: inline-block;
   margin-left: 14px;
   -webkit-transform: translateX(calc(18px - -100%));
-      -ms-transform: translateX(calc(18px - -100%));
-          transform: translateX(calc(18px - -100%));
+  -ms-transform: translateX(calc(18px - -100%));
+  transform: translateX(calc(18px - -100%));
 
   -webkit-animation-name: scrollAnim;
 
-          animation-name: scrollAnim;
+  animation-name: scrollAnim;
   -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   animation-direction: reverse;
 }
 
@@ -742,11 +742,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin-top: 4vw;
 }
 
@@ -758,8 +758,8 @@ body {
   /* justify-content: first baseline; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #footer .footer-items h5 {
@@ -784,8 +784,8 @@ body {
   top: 0%;
   left: 0%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -999;
 }
 
@@ -805,15 +805,15 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .line #line-h2 {
@@ -831,8 +831,8 @@ body {
   #nav {
     width: 100%;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     position: fixed;
     top: 0;
     padding: 3vw 2vw;
@@ -906,8 +906,8 @@ body {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   #video-cursor i {
@@ -948,8 +948,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   #image-container .image-items {
@@ -1021,8 +1021,8 @@ body {
     margin-top: 5vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   #page4-container #page4-flex img {
@@ -1110,12 +1110,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-bottom: 14vw;
   }
 
